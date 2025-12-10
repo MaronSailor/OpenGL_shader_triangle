@@ -1,0 +1,59 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "MSVC Code Analysis",
+          "version": "14.44.35215.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///c:/users/filse/source/repos/shader_learn/shader_learn/scene.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "401c7ea411f377435be45037384934befe14908ea1166fabbb4eed26914a83b0"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/filse/source/repos/shader_learn/shader_learn/scene.h"
+          },
+          "hashes": {
+            "sha-256": "fe6ebf884b4f334b04bdf0572ee0046f99151e13a0f30bd8d17942e7133ec16a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/filse/source/repos/shader_learn/shader_learn/triangle.h"
+          },
+          "hashes": {
+            "sha-256": "e2c4bba0fcb071bd48dd1619b58a71dbc2a1946fd1c93cae4389bf77e0748282"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/filse/source/repos/shader_learn/shader_learn/shaders.h"
+          },
+          "hashes": {
+            "sha-256": "d9b8a9814d8c5b5ac6761a60e68091ce840d8e5840577841307fc3a4e898a885"
+          }
+        }
+      ]
+    }
+  ]
+}

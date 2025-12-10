@@ -1,0 +1,53 @@
+#include "Scene.h"
+
+Triangle triangle;
+
+Scene::Scene() {};
+
+
+void Scene::initOpenGL() {
+	glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
+
+	glEnable(GL_DEPTH_TEST);
+	glDepthFunc(GL_LEQUAL);
+
+
+
+}
+
+void Scene::RenderFunction() {
+	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+
+	glMatrixMode(GL_MODELVIEW);
+
+
+	triangle.Draw();
+
+	glutSwapBuffers();
+}
+
+
+void Scene::Reshape(int w, int h) {
+	glViewport(0, 0, w, h);
+	glLoadIdentity();
+}
+
+
+
+
+
+
+
+-----------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
